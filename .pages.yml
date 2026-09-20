@@ -1,0 +1,38 @@
+media:
+  input: images
+  output: /images
+
+content:
+  - name: products
+    label: Products
+    type: file
+    path: products.json
+    fields:
+      - name: products
+        label: Products
+        type: list
+        fields:
+          - { name: id, label: "ID (unique, no spaces or caps)", type: string }
+          - { name: name, label: Product name, type: string }
+          - { name: price, label: Price, type: number }
+          - { name: priceFrom, label: "Price is a starting price (\"From $X\")", type: boolean, default: false }
+          - name: category
+            label: Category
+            type: select
+            options:
+              values:
+                - bestsellers
+                - fidgets
+                - desk
+                - jewelry
+                - keychains
+                - gifts
+                - custom
+          - { name: images, label: Photos, type: image, list: true }
+          - { name: best, label: "Best seller?", type: boolean, default: false }
+          - { name: isNew, label: "New?", type: boolean, default: false }
+          - { name: note, label: Note, type: string }
+          - { name: size, label: Size, type: string }
+          - { name: personalize, label: "Customer types a name?", type: boolean, default: false }
+          - { name: nameMax, label: Max name length, type: number }
+          - { name: nameClicker, label: "Name clicker (1 letter = 1 clicker)?", type: boolean, default: false }
