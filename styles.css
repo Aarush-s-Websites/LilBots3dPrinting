@@ -1,5 +1,5 @@
 /* ============================================================
-   Little Bot Creations â€” stylesheet
+   Little Bot Creations — stylesheet
    Design tokens
    ============================================================ */
 :root{
@@ -406,6 +406,8 @@ button{ font-family: inherit; }
 .name-hint.warn{ color: var(--coral-dark); font-weight:600; }
 .name-hint.ok{ color: #2C7A4B; font-weight:600; }
 .clicker-block{ margin-top: 10px; }
+.sound-pills{ display:flex; gap:9px; flex-wrap:wrap; }
+.sound-pills .pill{ padding: 8px 16px; font-size: .86rem; }
 .clicker-note{ font-size: .78rem; margin: 8px 0 0; }
 .optional{ font-weight:500; font-size: .74rem; color: var(--ink-soft); background: var(--paper); padding: 2px 7px; border-radius: var(--radius-full); }
 
