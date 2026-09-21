@@ -236,6 +236,14 @@
           <p class="selected-color">Selected: <span id="selectedColorName">White</span></p>
         </div>
 
+        <div class="clicker-sound-picker" id="clickerSoundBlock" hidden>
+          <p class="picker-label">Clicker sound</p>
+          <div class="sound-pills" id="soundOptions">
+            <button type="button" class="pill sound-pill active" data-sound="loud">🔊 Not silent</button>
+            <button type="button" class="pill sound-pill" data-sound="silent">🤫 Silent</button>
+          </div>
+        </div>
+
         <div class="personalize" id="personalizeBlock" hidden>
           <p class="picker-label">Add your name</p>
           <input type="text" id="nameInput" class="name-input" maxlength="10" placeholder="e.g. Aarush" autocomplete="off" aria-describedby="nameHint">
