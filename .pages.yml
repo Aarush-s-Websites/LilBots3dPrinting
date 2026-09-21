@@ -36,3 +36,4 @@ content:
           - { name: personalize, label: "Customer types a name?", type: boolean, default: false }
           - { name: nameMax, label: Max name length, type: number }
           - { name: nameClicker, label: "Name clicker (1 letter = 1 clicker)?", type: boolean, default: false }
+          - { name: clickerOption, label: "Offer silent / not-silent choice?", type: boolean, default: false }
